@@ -1,0 +1,20 @@
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    @include menu;
+}
+
+.headerNav__menu {
+    display: flex;
+}
+
+.headerNav__item {
+    margin-right: rem(48px);
+    &.headerNav__item--active {
+        text-decoration: line-through;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+}

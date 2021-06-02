@@ -1,21 +1,17 @@
 {% extends '_layouts/base.nunjucks' %}
 
-{% import "_modules/link/link.nunjucks" as link %}
+{% import "_modules/header/header.nunjucks" as header %}
+{% import "_modules/txtElement/txtElement.nunjucks" as txtElement %}
+{% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
+
+{% set data = site.data.home %}
 
 {% block content %}
-<div class="main-container">
-  <div class="yeogurt-info">
-    <h1>Welcome to Yeogurt!</h1>
-    <p>
-      Take a look at the {{link.content({
-        href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
-        text: 'documentation'
-      })}} and start mixing up something awesome.
-    </p>
-    <p>
-      <img src="images/yeogurt-swirl.png" width="75px" class="logo" />
-    </p>
-  </div>
+<div class="mainContent">
+  {{header.content()}}
+  {{txtElement.content(data.txtElement)}}
+  {% for itemTtxtImage in data.txtImage %}
+    {{txtImage.content(itemTtxtImage)}}
+  {%endfor%}
 </div>
-<code class="version">v3.1.2</code>
 {% endblock %}

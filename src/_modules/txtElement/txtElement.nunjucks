@@ -1,0 +1,5 @@
+{% macro content(obj) %}
+<div class="txtElement">
+    <p class="txtElement__par">{{obj.txt}}</p>
+</div>
+{% endmacro %}

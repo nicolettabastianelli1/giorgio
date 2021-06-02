@@ -1,0 +1,22 @@
+{
+    "txtElement": {
+        "txt": "Giorgio Stefanoni, Digital Art Director<br> and UI/Graphic Designer from Milano."
+    },
+    "txtImage": [
+        {
+           "progetto": "Faraone",
+           "titolo": "Branding",
+           "anno": "2021",
+           "src": "/images/faraona.png",
+           "alt": "faraona"
+        },
+        {
+            "progetto": "Azimut",
+            "titolo": "App",
+            "anno": "2020",
+            "src": "/images/azimut.png",
+            "alt": "azimut"
+         }
+
+    ]
+}

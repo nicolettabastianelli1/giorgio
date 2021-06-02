@@ -1,0 +1,54 @@
+/* --------------------------------
+Import font
+-------------------------------- */
+
+
+@font-face {
+    font-family: 'Söhne-Buch';
+    src: url('../fonts/Söhne-Buch.otf') format('otf');
+        //  url('#{$urlSansSerifMedium}.ttf') format('truetype');
+    // url('#{$urlSansSerifMedium}.svg#GTASMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+$sansSerifRegular: 'Söhne-Buch', Arial;
+
+
+
+@mixin sansSerifRegular {
+    font-family: $sansSerifRegular;  
+}
+
+$text-base-size: 16px;
+
+/* type scale */
+
+@function rem($size) {
+    @return #{$size / $text-base-size}rem;
+}
+
+
+@mixin text {
+    @include sansSerifRegular;
+    font-size: rem(28px);
+    @include respond-above(m) {
+        font-size: rem(40px);
+    }
+    @include respond-above(xxm) {
+        font-size: rem(64px);
+    }
+}
+
+@mixin menu {
+    @include sansSerifRegular;
+    font-size: rem(28px);
+    @include respond-above(m) {
+        font-size: rem(40px);
+    }
+    @include respond-above(xxm) {
+        font-size: rem(40px);
+    }
+}
+

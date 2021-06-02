@@ -1,0 +1,10 @@
+.txtElement {
+    margin-top: rem(112px);
+    +.txtImage {
+        margin-top: (116px)
+    }
+}
+
+.txtElement__par {
+    @include text;
+}

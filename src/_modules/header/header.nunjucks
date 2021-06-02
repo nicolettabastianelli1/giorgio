@@ -1,0 +1,10 @@
+{% macro content(spec) %}
+<nav class="headerNav">
+    <h4 class="headerNav__name">Giorgio Stefanoni</h4>
+    <ul class="headerNav__menu">
+        <li class="headerNav__item headerNav__item--active">Works</li>
+        <li class="headerNav__item">About</li>
+        <li class="headerNav__item">Contact</li>
+    </ul>
+</nav>
+{% endmacro %}

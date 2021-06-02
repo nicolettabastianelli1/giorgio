@@ -1,0 +1,23 @@
+.txtImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: rem(16px)
+}
+
+.txtImage__list {
+    @include text;
+    width: 50%;
+}
+
+.txtImage__img {
+    width: 50%;
+}
+
+.txtImage__item {
+    display: block;
+    margin-bottom: 3px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
