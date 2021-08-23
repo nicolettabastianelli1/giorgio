@@ -2,21 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: top;
-    margin-bottom: rem(16px)
+    margin-bottom: rem(16px);
+    flex-direction: column-reverse;
+    @include respond-above(s) {
+        flex-direction: row;
+    }
+
 }
 
 .txtImage__list {
     @include text;
-    width: 50%;
+    width: 100%;
+    margin-top: rem(10px);
+    @include respond-above(s) {
+        margin-top: 0;
+        width: 50%;
+    }
 }
 
 .txtImage__img {
-    width: 50%;
+    width: 100%;
+    @include respond-above(s) {
+        width: 50%;
+    }
 }
 
 .txtImage__item {
     display: block;
     margin-bottom: 3px;
+    @include text;
     &:last-child{
         margin-bottom: 0;
     }

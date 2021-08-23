@@ -1,7 +1,20 @@
 .txtElement {
-    margin-top: rem(112px);
+    margin-top: rem(60px);
+    width: 90%;
+    @include respond-above(s) {
+        margin-top: rem(120px);
+    }
     +.txtImage {
-        margin-top: (116px)
+        margin-top: (40px);
+        @include respond-above(s) {
+            margin-top: (120px);
+        }
+    }
+    +.fullModule {
+        margin-top: (20px);
+        @include respond-above(s) {
+            margin-top: (120px);
+        }
     }
 }
 

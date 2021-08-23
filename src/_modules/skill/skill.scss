@@ -1,0 +1,17 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    @include respond-above(s) {
+        flex-direction: row;
+    }
+}
+
+.skills__left {
+    @include text;
+    width: 30%;
+}
+
+.skills__item {
+    @include text;
+    text-align: left;
+}

@@ -1,0 +1,13 @@
+.infoListWrapper {
+    display: flex;
+    @include text;
+    flex-direction: column;
+    margin-bottom: rem(16px);
+    @include respond-above(s) {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+.infoLIst__left {
+    width: 30%;
+}

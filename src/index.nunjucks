@@ -1,17 +1,60 @@
-{% extends '_layouts/base.nunjucks' %}
 
-{% import "_modules/header/header.nunjucks" as header %}
-{% import "_modules/txtElement/txtElement.nunjucks" as txtElement %}
-{% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
 
-{% set data = site.data.home %}
+  
+  
+  
 
-{% block content %}
-<div class="mainContent">
-  {{header.content()}}
-  {{txtElement.content(data.txtElement)}}
-  {% for itemTtxtImage in data.txtImage %}
-    {{txtImage.content(itemTtxtImage)}}
-  {%endfor%}
-</div>
-{% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+
+    
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>gio page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="./styles/main.css">
+    
+
+  </head>
+  <body>
+
+    
+<div class="main-container">
+  <div class="listPage">
+    <h1 class="titleListPage">List page</h1>
+    <ul class="listPage__pageList">
+      
+        <li class="listPage__page">
+          <a href="home.html" class="listPage__linkPage">
+           Home
+          </a>
+        </li>
+      
+        <li class="listPage__page">
+          <a href="foglia.html" class="listPage__linkPage">
+            Foglia
+          </a>
+        </li>
+
+        <li class="listPage__page">
+          <a href="bio.html" class="listPage__linkPage">
+            About
+          </a>
+        </li>
+      
+    </ul>
+
+  </div>
+
+
+  
+    
+  </body>
+</html>

@@ -10,8 +10,31 @@
 @import '../_modules/header/header';
 @import '../_modules/txtElement/txtElement';
 @import '../_modules/txtImage/txtImage';
+@import '../_modules/spaceModule/spaceModule';
+@import '../_modules/doubleModule/doubleModule';
+@import '../_modules/fullModule/fullModule';
+@import '../_modules/infoList/infoList';
+@import '../_modules/txtMouve/txtMouve';
+@import '../_modules/skill/skill';
 
 
 .mainContent {
     padding: 0 rem(16px);
+}
+
+.listPage {
+    padding: 40px
+}
+.titleListPage {
+    @include text;
+    margin-bottom: 120px
+}
+
+.listPage__page {
+    margin-bottom: 60px;
+    @include menu;
+    .listPage__linkPage {
+        color: black;
+    }
+
 }

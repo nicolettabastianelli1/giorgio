@@ -1,0 +1,31 @@
+.doubleModule {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    flex-direction: column;
+    @include respond-above(s) {
+        flex-direction: row;
+        margin-bottom: 64px;
+    }
+}
+
+
+.doubleModule__contet {
+    width: 100%;
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include respond-above(s) {
+        width: 50%;
+        margin-right: 16px;
+        margin-bottom: 0;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.double__img {
+    width: 100%;
+}

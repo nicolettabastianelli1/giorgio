@@ -33,22 +33,28 @@ $text-base-size: 16px;
 @mixin text {
     @include sansSerifRegular;
     font-size: rem(28px);
-    @include respond-above(m) {
+    line-height: rem(36px);
+    @include respond-above(s) {
         font-size: rem(40px);
+        line-height: rem(48px);
     }
     @include respond-above(xxm) {
         font-size: rem(64px);
+        line-height: rem(76px);
     }
 }
 
 @mixin menu {
     @include sansSerifRegular;
     font-size: rem(28px);
+    line-height: rem(36px);
     @include respond-above(m) {
         font-size: rem(40px);
+        line-height: rem(48px);
     }
     @include respond-above(xxm) {
         font-size: rem(40px);
+        line-height: rem(76px);
     }
 }
 

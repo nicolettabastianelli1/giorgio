@@ -1,0 +1,59 @@
+{
+    "txtElement": {
+        "txt": "Giorgio Stefanoni, Digital Art Director and UI/Graphic Designer from Milano. Graduated at Politecnico, with 8 years of experience in digital agencies and media companies."
+    },
+    "txtElement2": {
+        "txt": "Focused on creating engaging and easy-to-use online and offline products, it has matured a strong knowledge about the industries of fashion, retail, media, education, automotive, food & beverage."
+    },  
+    "txtImage": [
+        {
+           "progetto": "Faraone",
+           "titolo": "Branding",
+           "anno": "2021",
+           "src": "/images/faraona.png",
+           "alt": "faraona"
+        },
+        {
+            "progetto": "Azimut",
+            "titolo": "App",
+            "anno": "2020",
+            "src": "/images/azimut.png",
+            "alt": "azimut"
+         }
+
+    ],
+    "fullModule" :{
+        "src": "/images/prova2.jpg",
+        "alt": "azimut"
+    },
+
+    "skills": {
+        "skillList": [
+            {
+                "text": "Digital Art Direction"
+             },
+             {
+                "text": "UI Design & Prototyping"
+             },
+             {
+                "text": "Graphic Design"
+             },
+             {
+                "text": "Branding & Logo Design"
+             },
+             {
+                "text": "Print & Editorial Design"
+             },
+             {
+                "text": "Motion Graphics"
+             },
+             {
+                "text": "Photography"
+             }
+        ]
+    },
+    "txtMouve": {
+        "direction": "righy",
+        "txt": "Connexia — Condé Nast — Bitmama Reply — Connexia — Condé Nast — Bitmama Reply —"
+    }
+}

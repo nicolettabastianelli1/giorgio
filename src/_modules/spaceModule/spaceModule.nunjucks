@@ -1,0 +1,7 @@
+{% macro content(obj) %}
+<div class="spaceModule">
+    <div class="spaceModule__contet">
+        <img alt="{{obj.alt}}" class="spaceModule__img" src="{{obj.src}}"></img>
+    </div>
+</div>
+{% endmacro %}

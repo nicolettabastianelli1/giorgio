@@ -1,0 +1,10 @@
+{% macro content(obj) %}
+<div class="infoList">
+  {% for infoLItem in obj.infoList %}
+    <div class="infoListWrapper">
+        <span class="infoLIst__left">{{infoLItem.left}}</span>
+        <p class="infoLIst__righy">{{infoLItem.right}}</p>
+    </div>
+  {%endfor%}
+</div>
+{% endmacro %}

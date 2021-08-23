@@ -1,0 +1,9 @@
+.fullModule {
+    margin-bottom: 32px;
+    @include respond-above(s) {
+        margin-bottom: 64px;
+    }
+}
+.fullModule__img {
+    width: 100%;
+}

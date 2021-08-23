@@ -3,11 +3,14 @@
 
 'use strict';
 
-// import 'core-js';
-// import 'regenerator-runtime/runtime';
 // import $ from 'jquery';
-// import { Link } from '../_modules/link/link';
+// import './jquery-global.js';;
 
-// $(() => {
+import { HeaderMenu } from '../_modules/header/header';
 
-// });
+let menu = document.getElementsByClassName('j-menu');
+if (menu.length > 0) {
+  for (var i = 0; i < menu.length; i++) {
+    new HeaderMenu (menu[i])
+  }
+}
