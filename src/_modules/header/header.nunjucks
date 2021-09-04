@@ -1,9 +1,7 @@
 {% macro content(spec) %}
 <nav class="headerNav j-menu">
-    <h4 class="headerNav__name">Giorgio Stefanoni</h4>
-    <span class="headerNav__icon j-openMenu">icona</span>
+    <h4 class="headerNav__name">G — S</h4>
     <ul class="headerNav__menu">
-        <li class="headerNav__item headerNav__item--active">Works</li>
         <li class="headerNav__item">About</li>
         <li class="headerNav__item">Contact</li>
     </ul>

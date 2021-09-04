@@ -5,65 +5,17 @@
     @include menu;
     position: relative;
     z-index: 100;
-    padding: 5px 0;
+    padding: 13px 0;
 }
 
 .headerNav__menu {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    // transition: all .8s ease-in-out;
-    transform: translateY(-100%);
-    opacity: 0;
-    background: black;
-    z-index: -3;
-    height: 100vh;
-    padding-top: 118px;
     display: flex;
-    flex-direction: column;
-    color: white;
-    .headerNav--open & {
-        opacity: 1;
-        transform: translateY(0);
-
-    }
-    @include respond-above(s) {
-        flex-direction: row;
-        position: static;
-        padding-top: 0;
-        height: auto;
-        opacity: 1;
-        transform: none;
-        transition: none;
-        width: auto;
-        color: black;
-        background: white;
-    }
+    flex-direction: row;
 }
 
 .headerNav__item {
-    margin-bottom: 76px;
-    &.headerNav__item--active {
-        text-decoration: line-through;
-    }
+    margin-right: rem(24px);
     &:last-child{
-        margin-bottom: 0;
-    }
-    @include respond-above(s) {
-        margin-right: rem(48px);
-        margin-bottom: 0;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
-
-}
-
-.headerNav__icon {
-    cursor: pointer;
-    display: block;
-    @include respond-above(s) {
-        display: none;
+        margin-right: 0;
     }
 }

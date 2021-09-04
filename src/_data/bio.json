@@ -1,59 +1,33 @@
 {
-    "txtElement": {
-        "txt": "Giorgio Stefanoni, Digital Art Director and UI/Graphic Designer from Milano. Graduated at Politecnico, with 8 years of experience in digital agencies and media companies."
-    },
-    "txtElement2": {
-        "txt": "Focused on creating engaging and easy-to-use online and offline products, it has matured a strong knowledge about the industries of fashion, retail, media, education, automotive, food & beverage."
-    },  
-    "txtImage": [
-        {
-           "progetto": "Faraone",
-           "titolo": "Branding",
-           "anno": "2021",
-           "src": "/images/faraona.png",
-           "alt": "faraona"
-        },
-        {
-            "progetto": "Azimut",
-            "titolo": "App",
-            "anno": "2020",
-            "src": "/images/azimut.png",
-            "alt": "azimut"
-         }
-
-    ],
+    "textDouble": {
+        "textLeft": "about",
+         "textDoubleList": [
+             {
+                "text": "Graduated at Politecnico di Milano, he worked for more than 8 years in digital agencies and media company (Connexia, Bitmama Reply, Condé Nast) as Digital Art Director and UI Designer."
+              },
+              {
+                "text": "He curated a series of engaging and easy-to-use online and offline products, with a focus on websites, applications, digital contents and brand identity."
+              }
+         ]
+     },
+     "textDouble2": {
+        "textLeft": "past<br>work",
+         "textDoubleList": [
+             {
+                "text": "Condé Nast (La Cucina Italiana, Glamour, Vogue), RCS (Giro d’Italia), Prada, Dsquared2, Trussardi, Nespresso, Mondadori, Zegna, Volkswagen, Yamaha, Diadora, Barilla, Interspar, Zambon, Antonia, Salini, Reply, Santoni, Intimissimi, Voiello, Bosch, Faraone, Azimut."
+              }
+         ]
+     },
+     "textDouble3": {
+        "textLeft": "skills",
+         "textDoubleList": [
+             {
+                "text": "Digital Art Direction<br>UI Design & Prototyping<br>Graphic Design<br>Branding & Logo Design<br>Print & Editorial Design<br>Motion Graphics<br>Photography"
+              }
+         ]
+     },
     "fullModule" :{
-        "src": "/images/prova2.jpg",
+        "src": "/images/about.png",
         "alt": "azimut"
-    },
-
-    "skills": {
-        "skillList": [
-            {
-                "text": "Digital Art Direction"
-             },
-             {
-                "text": "UI Design & Prototyping"
-             },
-             {
-                "text": "Graphic Design"
-             },
-             {
-                "text": "Branding & Logo Design"
-             },
-             {
-                "text": "Print & Editorial Design"
-             },
-             {
-                "text": "Motion Graphics"
-             },
-             {
-                "text": "Photography"
-             }
-        ]
-    },
-    "txtMouve": {
-        "direction": "righy",
-        "txt": "Connexia — Condé Nast — Bitmama Reply — Connexia — Condé Nast — Bitmama Reply —"
     }
 }

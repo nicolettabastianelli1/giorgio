@@ -1,7 +1,15 @@
 {
-    "txtElement": {
-        "txt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
+    "textDouble": {
+        "textLeft": "They Live<br>Photo",
+         "textDoubleList": [
+             {
+                "text": "They live” is a research on a forgotten urban population. Victim and executioner of the unbridled consumerism of the contemporary city, paid little to advertise a poor product."
+              },
+              {
+                "text": "But they are always there, still, hanging, they smile at us, they accompany us during our day. Each of them is unique, with their own emotions: enthusiastic, thoughtful, surrendered. They will always be there, next to us. They live."
+              }
+         ]
+     },
     "txtImage": [
         {
            "progetto": "Faraone",
@@ -25,11 +33,11 @@
     },
     "doubleModule":{
         "src": "/images/prova4.jpg",
-        "srcprva": "/images/prova4.jpg",
+        "src2": "/images/prova4.png",
         "alt": "azimut"
     },
     "spaceModule":{
-        "src": "/images/prova4.jpg",
+        "src": "/images/space.png",
         "alt": "azimut"
     },
     "infoList": {

@@ -8,15 +8,38 @@
 
 // Import Modules
 @import '../_modules/header/header';
-@import '../_modules/txtElement/txtElement';
+@import '../_modules/textDouble/textDouble';
 @import '../_modules/txtImage/txtImage';
 @import '../_modules/spaceModule/spaceModule';
 @import '../_modules/doubleModule/doubleModule';
 @import '../_modules/fullModule/fullModule';
 @import '../_modules/infoList/infoList';
 @import '../_modules/txtMouve/txtMouve';
-@import '../_modules/skill/skill';
 
+
+.mainContent {
+    padding: 0 rem(16px);
+}
+
+body {
+    background-color: black;
+    color: white;
+  }
+  
+
+.spacer {
+    height: 48px;
+    @include respond-above(s) {
+        height: 64px;
+    }
+    @include respond-above(l) {
+        height: 96px;
+    }
+}  
+
+.footer__text {
+    @include menu;
+}
 
 .mainContent {
     padding: 0 rem(16px);
@@ -34,7 +57,7 @@
     margin-bottom: 60px;
     @include menu;
     .listPage__linkPage {
-        color: black;
+        color: white;
     }
 
 }

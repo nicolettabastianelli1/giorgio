@@ -1,0 +1,31 @@
+.textDouble {
+    display: flex;
+    flex-direction: column;
+    @include respond-above(s) {
+        flex-direction: row;
+    }
+}
+
+.textDouble__left {
+    @include text;
+    margin-bottom: 48px;
+    text-transform: uppercase;
+    @include respond-above(s) {
+        width: 50%;
+        margin-bottom: 0px;
+    }
+}
+
+.textDouble__right {
+    @include respond-above(s) {
+        text-align: left;
+        width: 50%;
+    }
+}
+
+.textDouble__item {
+    @include text;
+    +.textDouble__item {
+        margin-top: 40px;
+    }
+}

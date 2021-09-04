@@ -1,19 +1,20 @@
 {
-    "txtElement": {
-        "txt": "Giorgio Stefanoni, Digital Art Director and UI/Graphic Designer from Milano."
+    "textDouble": {
+       "textLeft": "giorgio<br>stefanoni",
+        "textDoubleList": [
+            {
+                "text": "Digital Art Director — UI Designer<br>Milan— Italy"
+             }
+        ]
     },
     "txtImage": [
         {
-           "progetto": "Faraone",
-           "titolo": "Branding",
-           "anno": "2021",
            "src": "/images/faraona.png",
-           "alt": "faraona"
+           "alt": "faraona",
+           "txt": "Faraone — Branding"
         },
         {
-            "progetto": "Azimut",
-            "titolo": "App",
-            "anno": "2020",
+            "txt": "They Live — Photography",
             "src": "/images/azimut.png",
             "alt": "azimut"
          }
@@ -21,7 +22,8 @@
     ],
     "fullModule" :{
         "src": "/images/prova2.jpg",
-        "alt": "azimut"
+        "alt": "azimut",
+        "text": "Mondadori app"
     },
     "doubleModule":{
         "src": "/images/prova4.jpg",

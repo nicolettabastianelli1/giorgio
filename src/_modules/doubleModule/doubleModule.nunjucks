@@ -4,7 +4,7 @@
         <img alt="{{obj.alt}}" class="double__img" src="{{obj.src}}"></img>
     </div>
     <div class="doubleModule__contet">
-    <img alt="{{obj.alt}}" class="double__img" src="{{obj.srcprva}}"></img>
+        <img alt="{{obj.alt}}" class="double__img" src="{{obj.src2}}"></img>
     </div>
 
 </div>

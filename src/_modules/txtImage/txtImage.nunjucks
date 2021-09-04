@@ -1,10 +1,6 @@
 {% macro content(obj) %}
 <div class="txtImage">
-    <ul class="txtImage__list">
-        <li class="txtImage__item">{{obj.progetto}}</li>
-        <li class="txtImage__item">{{obj.titolo}}</li>
-        <li class="txtImage__item">{{obj.anno}}</li>
-    </ul>
     <img alt="{{obj.alt}}" class="txtImage__img" src="{{obj.src}}"></img>
+    <span class="txtImage__text">{{obj.txt}}</span>
 </div>
 {% endmacro %}

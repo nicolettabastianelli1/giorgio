@@ -1,24 +1,35 @@
 {% extends '_layouts/base.nunjucks' %}
 
 {% import "_modules/header/header.nunjucks" as header %}
-{% import "_modules/txtElement/txtElement.nunjucks" as txtElement %}
+{% import "_modules/textDouble/textDouble.nunjucks" as textDouble %}
 {% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
 {% import "_modules/fullModule/fullModule.nunjucks" as fullModule %}
-{% import "_modules/doubleModule/doubleModule.nunjucks" as doubleModule %}
-{% import "_modules/spaceModule/spaceModule.nunjucks" as spaceModule %}
-{% import "_modules/infoList/infoList.nunjucks" as infoList %}
-{% import "_modules/txtMouve/txtMouve.nunjucks" as txtMouve %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% set data = site.data.home %}
 
 {% block content %}
 <div class="mainContent">
   {{header.content()}}
-  {{txtElement.content(data.txtElement)}}
-  {% for itemTtxtImage in data.txtImage %}
-    {{txtImage.content(itemTtxtImage)}}
-  {%endfor%}
-
-  {{txtMouve.content(data.txtMouve)}}
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  {{textDouble.content(data.textDouble)}}
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  {{fullModule.content(data.fullModule)}}
+  <div class="spacer"></div>
+  <div class="txtImageContent">
+    {% for itemTtxtImage in data.txtImage %}
+      {{txtImage.content(itemTtxtImage)}}
+    {%endfor%}
+  </div>
+  <div class="spacer"></div>
+  <div class="txtImageContent">
+    {% for itemTtxtImage in data.txtImage %}
+      {{txtImage.content(itemTtxtImage)}}
+    {%endfor%}
+  </div>
+  <div class="spacer"></div>
+  {{footer.content(data.footer)}}
 </div>
 {% endblock %}

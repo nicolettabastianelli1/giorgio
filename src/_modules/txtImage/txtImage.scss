@@ -1,37 +1,36 @@
-.txtImage {
+.txtImageContent {
     display: flex;
-    justify-content: space-between;
-    align-items: top;
-    margin-bottom: rem(16px);
-    flex-direction: column-reverse;
-    @include respond-above(s) {
-        flex-direction: row;
-    }
-
+    flex-wrap: wrap;
+    font-size: 0;
 }
 
-.txtImage__list {
-    @include text;
+.txtImage {
+    margin-bottom: rem(48px);
     width: 100%;
-    margin-top: rem(10px);
-    @include respond-above(s) {
-        margin-top: 0;
-        width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    &:nth-child(even){
+        margin-bottom: 0; 
     }
+    @include respond-above(s) {
+        margin-bottom: 0;
+        margin-right: 8px;
+        width: calc(50% - 8px);
+        &:nth-child(even){
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+
 }
 
 .txtImage__img {
     width: 100%;
-    @include respond-above(s) {
-        width: 50%;
-    }
+    display: block;
 }
 
-.txtImage__item {
+.txtImage__text {
     display: block;
-    margin-bottom: 3px;
+    margin-top: 8px;
     @include text;
-    &:last-child{
-        margin-bottom: 0;
-    }
 }

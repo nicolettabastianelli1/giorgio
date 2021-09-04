@@ -32,29 +32,30 @@ $text-base-size: 16px;
 
 @mixin text {
     @include sansSerifRegular;
-    font-size: rem(28px);
-    line-height: rem(36px);
+    font-size: rem(20px);
+    line-height: rem(32px);
     @include respond-above(s) {
-        font-size: rem(40px);
-        line-height: rem(48px);
+        font-size: rem(20px);
+        line-height: rem(32px);
     }
     @include respond-above(xxm) {
-        font-size: rem(64px);
-        line-height: rem(76px);
+        font-size: rem(28px);
+        line-height: rem(42px);
     }
 }
 
 @mixin menu {
     @include sansSerifRegular;
-    font-size: rem(28px);
-    line-height: rem(36px);
+    text-transform: uppercase;
+    font-size: rem(18px);
+    line-height: rem(25px);
     @include respond-above(m) {
-        font-size: rem(40px);
-        line-height: rem(48px);
+        font-size: rem(18px);
+        line-height: rem(25px);
     }
     @include respond-above(xxm) {
-        font-size: rem(40px);
-        line-height: rem(76px);
+        font-size: rem(18px);
+        line-height: rem(25px);
     }
 }
 

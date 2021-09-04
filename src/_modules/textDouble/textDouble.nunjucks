@@ -1,0 +1,11 @@
+{% macro content(obj) %}
+<div class="textDouble">
+    <h4 class="textDouble__left">{{obj.textLeft}}</h4>
+    <div class="textDouble__right">
+        {% for textDouble in obj.textDoubleList %}
+            <p class="textDouble__item">{{textDouble.text}}</p>
+        {%endfor%}
+    </div>
+
+</div>
+{% endmacro %}

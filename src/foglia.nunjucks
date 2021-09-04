@@ -1,13 +1,14 @@
 {% extends '_layouts/base.nunjucks' %}
 
 {% import "_modules/header/header.nunjucks" as header %}
-{% import "_modules/txtElement/txtElement.nunjucks" as txtElement %}
+{% import "_modules/textDouble/textDouble.nunjucks" as textDouble %}
 {% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
 {% import "_modules/fullModule/fullModule.nunjucks" as fullModule %}
 {% import "_modules/doubleModule/doubleModule.nunjucks" as doubleModule %}
 {% import "_modules/spaceModule/spaceModule.nunjucks" as spaceModule %}
 {% import "_modules/infoList/infoList.nunjucks" as infoList %}
 {% import "_modules/txtMouve/txtMouve.nunjucks" as txtMouve %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% set data = site.data.foglia %}
 
@@ -15,11 +16,19 @@
 <div class="mainContent">
   {{header.content()}}
   {{fullModule.content(data.fullModule)}}
-  {{txtElement.content(data.txtElement)}}
-  {{fullModule.content(data.fullModule)}}
+    <div class="spacer"></div>
+  {{textDouble.content(data.textDouble)}}
+    <div class="spacer"></div>
   {{doubleModule.content(data.doubleModule)}}
+    {{fullModule.content(data.fullModule)}}
+    <div class="spacer"></div>
+    {{infoList.content(data.infoList)}}
+      <div class="spacer"></div>
   {{spaceModule.content(data.spaceModule)}}
-  {{infoList.content(data.infoList)}}
+    <div class="spacer"></div>
+  {{footer.content(data.footer)}}
+
+
   
 </div>
 {% endblock %}

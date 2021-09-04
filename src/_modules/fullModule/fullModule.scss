@@ -1,9 +1,9 @@
-.fullModule {
-    margin-bottom: 32px;
-    @include respond-above(s) {
-        margin-bottom: 64px;
-    }
-}
 .fullModule__img {
     width: 100%;
+    display: block;
+}
+.fullModule__text {
+    display: block;
+    margin-top: 8px;
+    @include text;
 }

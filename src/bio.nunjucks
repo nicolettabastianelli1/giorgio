@@ -1,26 +1,21 @@
 {% extends '_layouts/base.nunjucks' %}
 
 {% import "_modules/header/header.nunjucks" as header %}
-{% import "_modules/txtElement/txtElement.nunjucks" as txtElement %}
-{% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
+{% import "_modules/textDouble/textDouble.nunjucks" as textDouble %}
 {% import "_modules/fullModule/fullModule.nunjucks" as fullModule %}
-{% import "_modules/doubleModule/doubleModule.nunjucks" as doubleModule %}
-{% import "_modules/spaceModule/spaceModule.nunjucks" as spaceModule %}
-{% import "_modules/infoList/infoList.nunjucks" as infoList %}
-{% import "_modules/txtMouve/txtMouve.nunjucks" as txtMouve %}
-{% import "_modules/skill/skill.nunjucks" as skills %}
-{% import "_modules/txtMouve/txtMouve.nunjucks" as txtMouve %}
 
 {% set data = site.data.bio %}
 
 {% block content %}
 <div class="mainContent">
   {{header.content()}}
-  {{txtElement.content(data.txtElement)}}
+  <div class="spacer"></div>
+  {{textDouble.content(data.textDouble)}}
+  <div class="spacer"></div>
   {{fullModule.content(data.fullModule)}}
-   {{txtMouve.content(data.txtMouve)}}
-  {{txtElement.content(data.txtElement2)}}
-  {{fullModule.content(data.fullModule)}}
-  {{skills.content(data.skills)}}
+  <div class="spacer"></div>
+  {{textDouble.content(data.textDouble2)}}
+    <div class="spacer"></div>
+  {{textDouble.content(data.textDouble3)}}
 </div>
 {% endblock %}

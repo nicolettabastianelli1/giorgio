@@ -1,5 +1,8 @@
 {% macro content(obj) %}
 <div class="fullModule">
     <img alt="{{obj.alt}}" class="fullModule__img" src="{{obj.src}}"></img>
+     {% if obj.text %}
+        <p class="fullModule__text">{{obj.text}}</p>
+     {%endif%}
 </div>
 {% endmacro %}
