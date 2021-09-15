@@ -14,7 +14,8 @@
 @import '../_modules/doubleModule/doubleModule';
 @import '../_modules/fullModule/fullModule';
 @import '../_modules/infoList/infoList';
-@import '../_modules/txtMouve/txtMouve';
+@import '../_modules/linkText/linkText';
+@import '../_modules/toggleColor/toggleColor';
 
 
 .mainContent {
@@ -24,6 +25,11 @@
 body {
     background-color: black;
     color: white;
+    transition: all 1s ease;
+    &.change-color {
+        background-color: white;
+        color: black;
+    }
   }
   
 
@@ -60,4 +66,30 @@ body {
         color: white;
     }
 
+}
+
+
+.contact__text {
+    //width: 75%;
+    @include text;
+}
+
+.contact__wrapperLink {
+    display: flex;
+    flex-direction: column;
+    @include respond-above(s) {
+        flex-direction: row;
+    }
+}
+
+.contact__contentLink {
+    width: 100%;
+    margin-bottom: 48px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include respond-above(s) { 
+        width: 50%;
+        margin-bottom: 0;
+    }
 }

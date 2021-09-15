@@ -1,0 +1,3 @@
+{% macro content(obj) %}
+    <a href="{{obj.link}}" class="linkText__link">{{obj.linkTxt}}</a>
+{% endmacro %}

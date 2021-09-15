@@ -4,6 +4,7 @@
 {% import "_modules/textDouble/textDouble.nunjucks" as textDouble %}
 {% import "_modules/txtImage/txtImage.nunjucks" as txtImage %}
 {% import "_modules/fullModule/fullModule.nunjucks" as fullModule %}
+{% import "_modules/toggleColor/toggleColor.nunjucks" as toggleColor %}
 {% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% set data = site.data.home %}
@@ -31,5 +32,6 @@
   </div>
   <div class="spacer"></div>
   {{footer.content(data.footer)}}
+  {{toggleColor.content()}}
 </div>
 {% endblock %}

@@ -1,0 +1,40 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/header/header.nunjucks" as header %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
+{% import "_modules/linkText/linkText.nunjucks" as linkText %}
+
+{% set data = site.data.contatti %}
+
+{% block content %}
+<div class="mainContent">
+  {{header.content()}}
+  <div class="spacer"></div>
+  <div class="contact__text">
+    <p class="contant__par">
+    Drop me a few line about your idea or project,<br>I would be happy to help you and start a collaboration.</p>
+  </div>
+  <div class="spacer"></div>
+  <div class="contact__wrapperLink">
+    <div class="contact__contentLink">
+      {{linkText.content(data.linkText)}}
+    </div>
+    <div class="contact__contentLink">
+      {{linkText.content(data.linkText2)}}
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="contact__wrapperLink">
+      <div class="contact__contentLink">
+      {{linkText.content(data.linkText3)}}
+    </div>
+    <div class="contact__contentLink">
+      {{linkText.content(data.linkText4)}}
+    </div>
+  </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  {{footer.content(data.footer)}}
+</div>
+{% endblock %}

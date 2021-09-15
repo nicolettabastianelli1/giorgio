@@ -1,0 +1,6 @@
+{% macro content(obj) %}
+<div class="toggleColor">
+    <input class="toggleColor__input j-toggleColor" type="checkbox" id="switch" />
+    <label class="toggleColor__label" for="switch">Toggle</label>
+</div>
+{% endmacro %}

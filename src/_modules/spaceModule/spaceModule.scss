@@ -1,9 +1,5 @@
 .spaceModule {
     text-align: center;
-    margin: 0 auto 32px;
-    @include respond-above(s) {
-        margin: 0 auto 64px;
-    }
 }
 
 .spaceModule__contet {

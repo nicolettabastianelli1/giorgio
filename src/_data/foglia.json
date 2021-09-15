@@ -60,8 +60,11 @@
              }
         ]
     },
-    "txtMouve": {
-        "direction": "righy",
-        "txt": "Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact > Contact >"
+    "linkText": {
+        "linkTxt": "View full prototype"
+    },
+    "linkText2": {
+        "linkTxt": "back to all works"
     }
+    
 }

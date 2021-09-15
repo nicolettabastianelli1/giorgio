@@ -1,5 +1,0 @@
-{% macro content(obj) %}
-<div class="txtMouve">
-<marquee class="txtMouve__txt" scrollamount="17" behavior="scroll" direction="{{obj.direction}}">{{obj.txt}}</marquee>
-</div>
-{% endmacro %}

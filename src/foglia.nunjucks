@@ -7,7 +7,7 @@
 {% import "_modules/doubleModule/doubleModule.nunjucks" as doubleModule %}
 {% import "_modules/spaceModule/spaceModule.nunjucks" as spaceModule %}
 {% import "_modules/infoList/infoList.nunjucks" as infoList %}
-{% import "_modules/txtMouve/txtMouve.nunjucks" as txtMouve %}
+{% import "_modules/linkText/linkText.nunjucks" as linkText %}
 {% import "_modules/footer/footer.nunjucks" as footer %}
 
 {% set data = site.data.foglia %}
@@ -19,13 +19,21 @@
     <div class="spacer"></div>
   {{textDouble.content(data.textDouble)}}
     <div class="spacer"></div>
-  {{doubleModule.content(data.doubleModule)}}
+    {{doubleModule.content(data.doubleModule)}}
+    <div class="spacer"></div>
     {{fullModule.content(data.fullModule)}}
+      <div class="spacer"></div>
+ {{linkText.content(data.linkText)}}
+     <div class="spacer"></div>
+    {{doubleModule.content(data.doubleModule)}}
     <div class="spacer"></div>
     {{infoList.content(data.infoList)}}
+
       <div class="spacer"></div>
   {{spaceModule.content(data.spaceModule)}}
     <div class="spacer"></div>
+     {{linkText.content(data.linkText2)}}
+      <div class="spacer"></div>
   {{footer.content(data.footer)}}
 
 
