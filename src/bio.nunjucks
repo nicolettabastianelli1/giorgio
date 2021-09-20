@@ -3,6 +3,8 @@
 {% import "_modules/header/header.nunjucks" as header %}
 {% import "_modules/textDouble/textDouble.nunjucks" as textDouble %}
 {% import "_modules/fullModule/fullModule.nunjucks" as fullModule %}
+{% import "_modules/footer/footer.nunjucks" as footer %}
+{% import "_modules/toggleColor/toggleColor.nunjucks" as toggleColor %}
 
 {% set data = site.data.bio %}
 
@@ -17,5 +19,7 @@
   {{textDouble.content(data.textDouble2)}}
     <div class="spacer"></div>
   {{textDouble.content(data.textDouble3)}}
+    {{footer.content(data.footer)}}
+    {{toggleColor.content()}}
 </div>
 {% endblock %}

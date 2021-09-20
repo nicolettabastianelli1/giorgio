@@ -9,6 +9,7 @@
 {% import "_modules/infoList/infoList.nunjucks" as infoList %}
 {% import "_modules/linkText/linkText.nunjucks" as linkText %}
 {% import "_modules/footer/footer.nunjucks" as footer %}
+{% import "_modules/toggleColor/toggleColor.nunjucks" as toggleColor %}
 
 {% set data = site.data.foglia %}
 
@@ -35,6 +36,7 @@
      {{linkText.content(data.linkText2)}}
       <div class="spacer"></div>
   {{footer.content(data.footer)}}
+    {{toggleColor.content()}}
 
 
   
